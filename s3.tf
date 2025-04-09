@@ -44,10 +44,10 @@ resource "aws_s3_bucket_ownership_controls" "hugo_website_permissions" {
 resource "aws_s3_bucket_public_access_block" "frontend_public_access_block" {
   bucket = aws_s3_bucket.hugo_website.id
 
-  block_public_acls        = false
-  block_public_policy      = false
-  ignore_public_acls       = false
-  restrict_public_buckets  = false
+  block_public_acls       = false
+  block_public_policy     = false
+  ignore_public_acls      = false
+  restrict_public_buckets = false
 }
 
 # Step 4 - Configuring CORS
@@ -102,14 +102,14 @@ resource "aws_s3_bucket_website_configuration" "static_site_configuration" {
 
 #Step 7 - Upload files
 resource "aws_s3_object" "file_upload" {
-  depends_on    = [aws_s3_bucket_versioning.versioning_parameters]
-  bucket        = var.bucket
- 
+  depends_on = [aws_s3_bucket_versioning.versioning_parameters]
+  bucket     = var.bucket
+
   #Folder "resources" contains files to be uploaded to s3
-  for_each      = fileset ("resources/", "**/*.*")
- 
-  key           = each.value
-  source        = "resources/${each.value}"
-  content_type  = each.value
+  for_each = fileset("resources/", "**/*.*")
+
+  key          = each.value
+  source       = "resources/${each.value}"
+  content_type = each.value
 }
 

@@ -40,6 +40,6 @@ variable "s3_expired_days" {
 }
 
 variable "lifecycle_enabled" {
-default = true
-description = "Does this bucket needs any oject to either transtion to another low cost storage or needs object to be expired after some days"
+  default     = true
+  description = "Does this bucket needs any oject to either transtion to another low cost storage or needs object to be expired after some days"
 }
