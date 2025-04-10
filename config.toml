@@ -1,6 +1,8 @@
 baseURL = '/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
+theme = "archie"
+relativeURLs = true
 
 [[menus.main]]
 name = 'Home'
