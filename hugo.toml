@@ -1,0 +1,4 @@
+baseURL = 'http://agustin-s.s3-website-us-east-1.amazonaws.com/'
+languageCode = 'en-us'
+title = 'Agustin s - Hugo Site-'
+theme= 'archie'
