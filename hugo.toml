@@ -1,7 +1,6 @@
 baseURL = 'http://agustin-s.s3-website-us-east-1.amazonaws.com/'
 languageCode = 'en-us'
 title = 'Agustin S - Hugo Site'
-title = "Archie"
 theme="archie"
 
 # Code Highlight
