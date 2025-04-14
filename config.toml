@@ -1,25 +1,42 @@
-baseURL = '/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "archie"
-relativeURLs = true
+theme = "smol"
 
-[[menus.main]]
-name = 'Home'
-pageRef = '/'
-weight = 10
+# Parameters
+[params]
+    subtitle = "Subtitle for Hugo S3 Website"
+    dateFmt = "14.04.2025 15:04"
 
-[[menus.main]]
-name = 'Posts'
-pageRef = '/posts'
-weight = 20
+# Header
+[menu]
+  [[menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/posts/"
+        weight = 1 
 
-[[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
-weight = 30
+  [[menu.main]]
+        identifier = "categories"
+        name = "Categories"
+        url = "/categories/"
+        weight = 2 
 
-[module]
-  [module.hugoVersion]
-    extended = false
-    min = "0.119.0"
+  [[menu.main]]
+        identifier = "tags"
+        name = "Tags"
+        url = "/tags/"
+        weight = 3
+
+# Footer
+  [[menu.footer]]
+        name = "Github"
+        url = "https://github.com/example"
+        weight = 1 
+
+    [[menu.footer]]
+        name = "Mastodon"
+        url = "https://example.com/@user"
+        weight = 2 
+
+    [[menu.footer]]
+        name = "Imprint"
+        url = "/imprint"
+        weight = 3 
