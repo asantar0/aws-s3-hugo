@@ -8,8 +8,11 @@ section: issue
 
 ## 🛠️ Server Maintenance in Progress <br>
 Status: 🚧 Under Maintenance <br>
+
 Start Time: April 18, 2025, 02:00 AM UTC <br>
+
 Estimated Downtime: 2 hours <br>
+
 Affected Services: <br>
 - Web portal
 - API access
