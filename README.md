@@ -42,11 +42,19 @@ It works just like the status pages used by GitHub, Cloudflare, or Atlassian —
 
 
 ## 🧪 Development Workflow
+First of all, it's necessary to create our infraestructure in order to deploy CState page in AWS S3. In order to accomplish this goal, you need to do the following steps
+
 ```
-$  hugo server
+$ git clone git@github.com:asantar0/aws-s3-hugo.git
+
+$ cd terraform
+
+$ terraform apply
 ```
 
-This runs a local development server at http://localhost:1313.
+After, you need to configure Secrets in "Actions and variables" and create a "IAM_ROLE_ARN" variable.
+
+Wrapping up, every single change that appears in folders "content", "layouts" and "static" will trigger a github actions plan.
 
 
 ## 🙌 Acknowledgments
