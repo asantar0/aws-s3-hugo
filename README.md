@@ -25,14 +25,14 @@ It works just like the status pages used by GitHub, Cloudflare, or Atlassian —
 
 ## 📁 Project Structure
 
-├── archetypes/         # Hugo content archetypes  
-├── content/            # Markdown content files    
-├── public/             #  
-├── layouts/            # Custom layout templates  
-├── static/             # Static assets (images, CSS, JS)  
-├── themes/             # Hugo themes  
-├── config.yml          # Hugo site configuration  
-└── terraform/          # IaC for AWS and Cloudflare
+├── archetypes/         -> Hugo content archetypes  
+├── content/            -> Markdown content files    
+├── public/             ->   
+├── layouts/            -> Custom layout templates  
+├── static/             -> Static assets (images, CSS, JS)  
+├── themes/             -> Hugo themes  
+├── config.yml          -> Hugo site configuration  
+└── terraform/          -> IaC for AWS and Cloudflare
 
 
 ## 🛠️ Requirements
@@ -43,9 +43,10 @@ It works just like the status pages used by GitHub, Cloudflare, or Atlassian —
 
 
 ## 🧪 Development Workflow
+```
+$  hugo server
+```
 
-hugo server
-´
 This runs a local development server at http://localhost:1313.
 
 
