@@ -27,7 +27,6 @@ It works just like the status pages used by GitHub, Cloudflare, or Atlassian —
 
 ├── archetypes/         -> Hugo content archetypes  
 ├── content/            -> Markdown content files    
-├── public/             ->   
 ├── layouts/            -> Custom layout templates  
 ├── static/             -> Static assets (images, CSS, JS)  
 ├── themes/             -> Hugo themes  
