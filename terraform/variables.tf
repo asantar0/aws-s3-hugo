@@ -1,5 +1,6 @@
+#AWS S3
 variable "bucket" {
-  default     = "agustin-s"
+  default     = "root-view.online"
   description = "The name of the bucket to create. If omitted, Terraform will assign a random, unique name. Conflicts with name_prefix."
   type        = string
 }
@@ -42,4 +43,35 @@ variable "s3_expired_days" {
 variable "lifecycle_enabled" {
   default     = true
   description = "Does this bucket needs any oject to either transtion to another low cost storage or needs object to be expired after some days"
+}
+
+#Cloudflare
+variable "api_token" {
+  default     = ""
+  description = "N/A"
+}
+
+variable "api_key" {
+  default     = ""
+  description = "N/A"
+}
+
+variable "api_email" {
+  default     = ""
+  description = "N/A"
+}
+
+variable "site_domain" {
+  default     = ""
+  description = "N/A"
+}
+
+variable "zone_id" {
+  default     = ""
+  description = "N/A"
+}
+
+variable "account_id" {
+  default     = ""
+  description = "N/A"
 }

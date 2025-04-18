@@ -26,14 +26,13 @@ It works just like the status pages used by GitHub, Cloudflare, or Atlassian —
 ## 📁 Project Structure
 
 ├── archetypes/         # Hugo content archetypes  
-├── content/            # Markdown content files  
+├── content/            # Markdown content files    
 ├── public/             #  
-├── resources/          # Files used in IaC for AWS
 ├── layouts/            # Custom layout templates  
 ├── static/             # Static assets (images, CSS, JS)  
 ├── themes/             # Hugo themes  
 ├── config.yml          # Hugo site configuration  
-└── terraform/          # IaC for AWS
+└── terraform/          # IaC for AWS and Cloudflare
 
 
 ## 🛠️ Requirements
