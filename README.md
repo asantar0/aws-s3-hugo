@@ -57,5 +57,5 @@ After, you need to configure Secrets in "Actions and variables" and create a "IA
 Wrapping up, every single change that appears in folders "content", "layouts" and "static" will trigger a github actions plan.
 
 
-## 📄 License
+## License
 This project is open-source and available under the MIT License.
